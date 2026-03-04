@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Column from "./Column";
-import { TaskProvider, useTasks } from "./TaskContext";
+import StatsBar from "./StatsBar";
 
 const COLUMNS = [
   {
@@ -43,7 +43,7 @@ function Board() {
 
   return (
     <div>
-      {/* Toolbar */}
+      <StatsBar />{/* Toolbar */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-4">
         <div className="relative flex-1 min-w-0 w-full sm:max-w-xs">
           <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
